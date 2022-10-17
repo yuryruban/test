@@ -5,6 +5,14 @@ const selectItems = document.querySelectorAll('.select__item');
 const rangeItem = document.querySelector('.forma__range-item');
 const formaFile = document.querySelector('.forma__file');
 const formaFileImg = document.querySelector('.forma__fileImg');
+const hamburger = document.querySelector('.hamburger');
+const headerMenu = document.querySelector('.header__menu');
+
+hamburger.addEventListener("click", function () {
+	hamburger.classList.toggle("is-active");
+	headerMenu.classList.toggle("header__menu_hide");
+	headerMenu.classList.toggle("header__menu_show");
+});
 
 
 selectHead.addEventListener('click', () => {
@@ -40,3 +48,4 @@ formaFile.addEventListener('change', () => {
 	document.querySelector('.forma__fileText').textContent = fileName;
 	formaFileImg.src = 'icons/check.png';
 });
+

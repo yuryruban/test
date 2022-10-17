@@ -11,7 +11,7 @@
 }
 
 .container {
-	width: 1172px;
+	max-width: 1172px;
 	margin: 0px auto;
 	height: 100%
 }
@@ -112,10 +112,6 @@ input[type=email],
 	border-radius: 3px;
 }
 
-li {
-	z-index: 0;
-}
-
 @import 'blocks/header';
 @import 'blocks/banner';
 @import 'blocks/order';
@@ -124,4 +120,5 @@ li {
 @import 'blocks/select';
 @import 'blocks/range';
 @import 'blocks/footer';
+@import 'blocks/hamburger';
 @import 'mobile/mobile';
