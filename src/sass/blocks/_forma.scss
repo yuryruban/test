@@ -3,6 +3,7 @@
 	z-index: 5;
 	display: grid;
 	grid-template-columns: repeat(3, 370px);
+	justify-content: center;
 	column-gap: 30px;
 	row-gap: 30px;
 

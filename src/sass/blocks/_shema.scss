@@ -3,8 +3,9 @@
 
 	&__elements {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: flex-start;
+		flex-wrap: wrap;
 	}
 
 	&__el {
@@ -14,6 +15,11 @@
 		justify-content: center;
 		align-items: center;
 		width: 209px;
+		margin-bottom: 33px;
+
+		&:nth-child(5n)>.shema__line {
+			display: none;
+		}
 
 		p {
 			margin-top: 20px;
@@ -48,7 +54,7 @@
 	&__line {
 		position: absolute;
 		top: 47px;
-		right: -71px;
+		right: -65px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;

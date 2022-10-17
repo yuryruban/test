@@ -15,8 +15,8 @@
 		}
 
 		&__line {
-			right: -53px;
-			width: 80px;
+			right: -42px;
+			width: 70px;
 		}
 	}
 
@@ -90,7 +90,7 @@
 
 	.shema {
 		&__el {
-			margin: 0 3px;
+			margin: 0 3px 30px 3px;
 
 			p {
 				margin-top: 11px;
@@ -202,17 +202,6 @@
 
 		&__btns_main {
 			margin-top: 57px;
-		}
-	}
-
-	.shema {
-		&__elements {
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-
-		&__el {
-			margin-bottom: 33px;
 		}
 	}
 
