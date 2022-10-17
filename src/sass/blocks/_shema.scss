@@ -1,0 +1,71 @@
+.shema {
+	position: relative;
+
+	&__elements {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	&__el {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 209px;
+
+		p {
+			margin-top: 20px;
+			color: $white;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			text-align: center;
+		}
+	}
+
+	&__circ {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 100%;
+
+		&_lg {
+			width: 100px;
+			height: 100px;
+			background-color: $darkBlue;
+		}
+
+		&_md {
+			width: 95px;
+			height: 95px;
+			background-color: $blue;
+		}
+	}
+
+	&__lines {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: absolute;
+		top: 47px;
+		padding: 0px 166.5px;
+	}
+
+	&__line {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 110px;
+		margin-right: 130px;
+
+		div {
+			content: '';
+			width: 6px;
+			height: 6px;
+			border-radius: 100%;
+			background-color: $lineGrey;
+		}
+	}
+}

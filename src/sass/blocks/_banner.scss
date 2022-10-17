@@ -1,0 +1,67 @@
+.banner {
+	background: url(../img/background/mainBanner.jpg) center center/cover no-repeat;
+	height: 100vh;
+
+	&__title {
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 58px;
+		text-transform: uppercase;
+		color: $black;
+
+		span {
+			color: $blue;
+		}
+
+		&_main {
+			padding-top: 203px;
+			width: 780px;
+		}
+	}
+
+	&__text {
+		font-size: 20px;
+		line-height: 24px;
+
+		&_main {
+			margin-top: 80px;
+		}
+
+		p {
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+
+		ul>li {
+			position: relative;
+			list-style-type: none;
+			margin-bottom: 5px;
+			margin-left: 15px;
+
+			&::before {
+				content: '';
+				width: 4.94px;
+				height: 1.51px;
+				background-color: $black;
+				position: absolute;
+				left: -11px;
+				top: 50%;
+			}
+		}
+	}
+
+	&__btns {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&_main {
+			margin-top: 80px;
+			width: 396px;
+		}
+
+		.btn {
+			width: 183px;
+		}
+	}
+}

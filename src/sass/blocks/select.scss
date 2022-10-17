@@ -1,0 +1,63 @@
+.select {
+	position: relative;
+
+	&__head {
+		cursor: pointer;
+
+		&.open {
+			background-color: $selectOpen;
+			color: $white;
+			border: 0px;
+			border-radius: 3px 3px 0px 0px;
+		}
+	}
+
+	&__head::after {
+		width: 10px;
+		height: 6px;
+		background: url(../icons/arrow.svg) no-repeat center / cover;
+		position: absolute;
+		right: 11px;
+		top: 50%;
+		transform: translateY(-50%);
+		content: '';
+		display: block;
+		transition: .2s ease-in;
+	}
+
+	&__head.open::after {
+		transform: translateY(-50%) rotate(180deg);
+	}
+
+	&__list {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		color: $white;
+		background: rgba(39, 39, 51, 0.9);
+		border: 1px solid #3D4050;
+		border-radius: 0px 0px 3px 3px;
+		margin-top: 5px;
+		max-height: 205px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		z-index: 100;
+		margin: 0;
+		padding: 0;
+		overscroll-behavior: contain;
+	}
+
+	&__item {
+		position: relative;
+		cursor: pointer;
+		list-style-type: none;
+		padding: 10px;
+
+		&:hover {
+			color: $blue-logo;
+			background: rgba(39, 39, 51, 0.5);
+		}
+	}
+
+}

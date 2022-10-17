@@ -1,0 +1,45 @@
+.header {
+	position: fixed;
+	z-index: 10;
+	height: 100px;
+	width: 100%;
+	background: rgba(16, 16, 29, 0.9);
+	color: $white;
+
+	&__wrapper {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 800;
+		font-size: 28px;
+		line-height: 33px;
+		text-transform: uppercase;
+		z-index: inherit;
+
+		span {
+			color: $blue-logo;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-item {
+			margin-left: 60px;
+			list-style-type: none;
+
+			a {
+				font-weight: 600;
+				font-size: 13px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
