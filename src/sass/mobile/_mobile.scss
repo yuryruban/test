@@ -3,6 +3,38 @@
 		max-width: 960px;
 	}
 
+	.order {
+		&__shema {
+			width: 960px;
+		}
+	}
+
+	.shema {
+		&__el {
+			width: 170px;
+		}
+
+		&__line {
+			right: -53px;
+			width: 80px;
+		}
+	}
+
+	.forma {
+		grid-template-columns: repeat(3, 300px);
+
+		&__range-text {
+			grid-template-columns: 569px repeat(2, auto);
+		}
+	}
+
+	.select__head,
+	input[type=email],
+	input[type=text],
+	.forma__btn {
+		width: 300px;
+	}
+
 	.footer {
 		&__wrapper {
 			width: 960px;
@@ -32,9 +64,62 @@
 	}
 
 	.banner {
+		padding: 0px 0px 150px 0;
+
 		&__title_main {
 			width: 100%;
 		}
+
+		&__text_main {
+			margin-top: 50px;
+		}
+	}
+
+	.order {
+		padding-bottom: 100px;
+
+		&__shema {
+			width: 100%;
+			margin: 50px auto 0 auto;
+		}
+
+		&__subtitle {
+			margin-top: 15px;
+		}
+	}
+
+	.shema {
+		&__el {
+			margin: 0 3px;
+
+			p {
+				margin-top: 11px;
+				font-size: 13px;
+				line-height: 17px;
+			}
+		}
+
+		&__line {
+			display: none;
+		}
+	}
+
+	.forma {
+		grid-template-columns: 245px repeat(2, 200px);
+
+		&__range-text {
+			grid-template-columns: 569px repeat(2, auto);
+		}
+	}
+
+	.select__head {
+		width: 250px;
+	}
+
+	input[type=email],
+	input[type=text],
+	.forma__btn {
+		width: 200px;
 	}
 
 	.footer {
@@ -77,17 +162,6 @@
 	}
 
 	.header {
-		&__menu_show {
-			animation-name: headerin;
-			animation-duration: 1s;
-		}
-
-		&__menu_hide {
-			margin-left: -100%;
-			animation-name: headerout;
-			animation-duration: 1s;
-		}
-
 		&__menu {
 			position: absolute;
 			left: 0;
@@ -99,9 +173,16 @@
 			font-size: 18px;
 			padding: 20px 0;
 			justify-content: space-around;
+			opacity: 0;
+			transition: all 0.3s;
 
 			&-item {
 				margin-left: 0px;
+			}
+
+			&_show {
+				opacity: 1;
+				transition: all 0.3s;
 			}
 		}
 	}
@@ -122,6 +203,66 @@
 		&__btns_main {
 			margin-top: 57px;
 		}
+	}
+
+	.shema {
+		&__elements {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__el {
+			margin-bottom: 33px;
+		}
+	}
+
+	.order {
+		&__forma {
+			margin-top: 30px;
+		}
+	}
+
+	.forma {
+		grid-template-columns: repeat(3, 150px);
+		column-gap: 20px;
+		row-gap: 20px;
+
+		&__range {
+			font-size: 14px;
+			line-height: 18px;
+
+			&-text {
+				grid-template-columns: auto repeat(2, 11px);
+			}
+		}
+
+
+		.select__head,
+		input[type=email],
+		input[type=text],
+		.forma__btn {
+			width: 150px;
+			padding: 8px 16px 8px 4px;
+			font-weight: 400;
+			font-size: 12px;
+		}
+
+		.footer {
+			&__payment {
+				flex-direction: column;
+				align-items: flex-start;
+				row-gap: 8px;
+			}
+		}
+	}
+
+	input[type=range] {
+		&::-webkit-slider-thumb {
+			width: 25px;
+			height: 25px;
+			margin-top: -11px;
+		}
+
 	}
 
 	.footer {
@@ -183,6 +324,23 @@
 
 		.btn {
 			margin-bottom: 20px;
+		}
+	}
+
+	.forma {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		width: 80%;
+
+		.select__head,
+		select,
+		input[type=email],
+		input[type=text],
+		.forma__btn,
+		.forma__item {
+			width: 100%;
 		}
 	}
 

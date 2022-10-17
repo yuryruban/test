@@ -42,10 +42,11 @@
 		max-height: 205px;
 		overflow-x: hidden;
 		overflow-y: auto;
-		z-index: 100;
 		margin: 0;
 		padding: 0;
 		overscroll-behavior: contain;
+		opacity: 0;
+		animation: all 3s;
 	}
 
 	&__item {

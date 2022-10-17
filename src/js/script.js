@@ -10,14 +10,12 @@ const headerMenu = document.querySelector('.header__menu');
 
 hamburger.addEventListener("click", function () {
 	hamburger.classList.toggle("is-active");
-	headerMenu.classList.toggle("header__menu_hide");
 	headerMenu.classList.toggle("header__menu_show");
 });
 
 
 selectHead.addEventListener('click', () => {
 	selectHead.classList.toggle('open');
-	selectList.classList.toggle('hidden');
 	selectList.classList.toggle('show');
 });
 

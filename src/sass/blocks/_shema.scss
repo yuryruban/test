@@ -8,6 +8,7 @@
 	}
 
 	&__el {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -44,21 +45,14 @@
 		}
 	}
 
-	&__lines {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+	&__line {
 		position: absolute;
 		top: 47px;
-		padding: 0px 166.5px;
-	}
-
-	&__line {
+		right: -71px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		width: 110px;
-		margin-right: 130px;
 
 		div {
 			content: '';

@@ -1,6 +1,6 @@
 .forma {
 	position: relative;
-	z-index: 10;
+	z-index: 5;
 	display: grid;
 	grid-template-columns: repeat(3, 370px);
 	column-gap: 30px;
@@ -44,7 +44,6 @@
 		opacity: 0;
 		overflow: hidden;
 		position: absolute;
-		z-index: -1
 	}
 
 	&__fileImg {
