@@ -3,7 +3,7 @@
 	z-index: 10;
 	height: 100px;
 	width: 100%;
-	background: rgba(16, 16, 29, 0.9);
+	background: $headerBackGround;
 	color: $white;
 	font-weight: 600;
 	font-size: 13px;
@@ -23,7 +23,11 @@
 		text-transform: uppercase;
 
 		span {
-			color: $blue-logo;
+			color: $logoBlue;
+		}
+
+		a:hover {
+			color: $white;
 		}
 	}
 

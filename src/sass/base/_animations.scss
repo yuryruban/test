@@ -1,0 +1,26 @@
+@keyframes open {
+	0% {
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	100% {
+		display: block;
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+
+@keyframes menuOpen {
+	0% {
+		display: block;
+		left: -100%;
+	}
+
+	100% {
+		display: block;
+		left: 0%;
+	}
+}

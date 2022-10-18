@@ -164,25 +164,30 @@
 	.header {
 		&__menu {
 			position: absolute;
-			left: 0;
+			left: -100%;
 			top: 0;
 			height: 100vh;
 			width: 40%;
 			background-color: $selectOpen;
 			flex-direction: column;
 			font-size: 18px;
-			padding: 20px 0;
+			padding-top: 70px;
 			justify-content: space-around;
-			opacity: 0;
-			transition: all 0.3s;
+			text-align: center;
 
 			&-item {
+				margin-bottom: 20px;
 				margin-left: 0px;
 			}
 
 			&_show {
-				opacity: 1;
-				transition: all 0.3s;
+				animation-name: menuOpen;
+				animation-duration: 0.8s;
+				animation-iteration-count: 1;
+				animation-direction: normal;
+				animation-timing-function: ease-out;
+				animation-fill-mode: forwards;
+				animation-delay: 0s;
 			}
 		}
 	}
@@ -234,6 +239,8 @@
 			padding: 8px 16px 8px 4px;
 			font-weight: 400;
 			font-size: 12px;
+			display: flex;
+			align-items: center;
 		}
 
 		.footer {

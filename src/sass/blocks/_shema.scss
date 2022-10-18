@@ -48,7 +48,19 @@
 			width: 95px;
 			height: 95px;
 			background-color: $blue;
+
+			img {
+				max-width: 38px;
+				max-height: 30px;
+				transition: 0.7s;
+
+				&:hover {
+					transform: scale(1.15);
+				}
+			}
 		}
+
+
 	}
 
 	&__line {

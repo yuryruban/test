@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Raleway:wght@800&display=swap');
-@import 'base/mixin';
 @import 'base/variables';
 
 * {
@@ -7,6 +6,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	scroll-behavior: smooth;
 }
 
 .container {
@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-	color: $blue-link;
+	color: $linkBlue;
 }
 
 .title {
@@ -56,6 +56,7 @@ a:hover {
 	text-align: center;
 	font-weight: 400;
 	font-size: 13px;
+	transition: 0.17s linear;
 
 	&:hover {
 		cursor: pointer;
@@ -100,6 +101,7 @@ input[type=email],
 	border-radius: 3px;
 }
 
+@import 'base/animations';
 @import 'blocks/header';
 @import 'blocks/banner';
 @import 'blocks/order';
@@ -111,12 +113,18 @@ input[type=email],
 @import 'blocks/hamburger';
 @import 'mobile/mobile';
 
+
 .hidden {
 	display: none;
-	opacity: 0;
 }
 
 .show {
-	opacity: 1;
-	animation: all 3s;
+	display: block;
+	animation-name: open;
+	animation-duration: 0.8s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: 0s;
 }

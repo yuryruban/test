@@ -4,7 +4,7 @@
 	&__head {
 		cursor: pointer;
 
-		&.open {
+		.open {
 			background-color: $selectOpen;
 			color: $white;
 			border: 0px;
@@ -30,13 +30,14 @@
 	}
 
 	&__list {
+		display: none;
 		position: absolute;
 		top: 100%;
 		left: 0;
 		right: 0;
 		color: $white;
-		background: rgba(39, 39, 51, 0.9);
-		border: 1px solid #3D4050;
+		background: $selectBackGround;
+		border: 1px solid $footerColor;
 		border-radius: 0px 0px 3px 3px;
 		margin-top: 5px;
 		max-height: 205px;
@@ -45,7 +46,6 @@
 		margin: 0;
 		padding: 0;
 		overscroll-behavior: contain;
-		opacity: 0;
 		animation: all 3s;
 	}
 
@@ -56,8 +56,8 @@
 		padding: 10px;
 
 		&:hover {
-			color: $blue-logo;
-			background: rgba(39, 39, 51, 0.5);
+			color: $logoBlue;
+			background: $selectHover;
 		}
 	}
 
